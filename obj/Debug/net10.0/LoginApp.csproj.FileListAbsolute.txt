@@ -96,3 +96,4 @@
 /home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.pdb
 /home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.genruntimeconfig.cache
 /home/ubuntu/LoginApp/obj/Debug/net10.0/ref/LoginApp.dll
+/home/ubuntu/LoginApp/obj/Debug/net10.0/compressed/2oks5q2ltk-{0}-iln2obliyh-iln2obliyh.gz
