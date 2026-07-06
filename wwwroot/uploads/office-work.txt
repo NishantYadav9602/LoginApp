@@ -1,0 +1,162 @@
+Project Deployment & CI/CD Documentation
+1. Projects
+The following projects are currently maintained:
+Navigate Direct Tax Compliance
+Navigate Dividend
+Navigate Custom Classification
+Navigate Pillar2
+Navigate Dispute (Owner: Shumail)
+Navigate Tax Hub (Owner: Shumail)
+Navigate Nigeria E-Invoicing (Owner: Nuriz)
+Navigate E-Invoicing (Owner: Nitin)
+2. Navigate E-Invoicing Environments
+2.1 AWS Environments
+Available Environments:
+Development (Dev)
+Quality Assurance (QA)
+Pre-Production (PreProd)
+Production (Prod)
+Technology Stack
+Technology	Deployment Platform
+Python	AWS Lambda, EC2 (Linux), ECR
+Java	AWS Lambda, EC2 (Linux)
+.NET	EC2 (Windows)
+Node.js	EC2 (Linux)
+2.2 Azure Environments
+Standard Azure Environments
+WM-UAT
+MS-UAT
+WM-PROD
+MS-PROD
+Technology Stack
+Technology	Deployment Platform
+Python	Azure Linux Server, Azure Function App
+.NET	Windows Server
+2.3 Azure NGC (Non-Production)
+Available Environments
+WM-UAT
+MS-UAT
+Technology Stack
+Technology	Deployment Platform
+Python	Azure Linux Server
+.NET	Azure Linux Server
+3. CI/CD Workflow
+3.1 Development Branch (Dev)
+Flow:
+Dev Branch
+↓
+Dev CI
+Unit Test Cases
+SonarQube Analysis
+↓
+Artifact Published
+ZIP
+JAR
+↓
+Dev CD
+↓
+Release Approval by Tester
+↓
+QA Testing
+↓
+If Approved
+↓
+Raise Pull Request (PR) to QA Branch
+↓
+Internal Approval by Tester
+↓
+Merge into QA Branch
+3.2 QA Branch
+Flow:
+QA Branch
+↓
+QA CI
+Unit Test Cases
+SonarQube Analysis
+↓
+Artifact Published
+ZIP
+JAR
+↓
+QA CD
+↓
+Release Approval by Tester
+↓
+QA Testing
+↓
+If Approved
+↓
+Raise Pull Request (PR) to PP Branch
+↓
+Internal Approval by Tester
+↓
+Merge into PP Branch
+3.3 Pre-Production (PP) Branch
+Flow:
+PP Branch
+↓
+PP CI
+Unit Test Cases
+SonarQube
+Veracode Security Scan
+↓
+Artifact Published
+ZIP
+JAR
+↓
+PP CD
+↓
+Release Approval by Tester
+↓
+QA Testing
+↓
+If Approved
+↓
+Raise Pull Request (PR) to Release Branch
+↓
+Internal Approval by PwC Team
+↓
+Merge into Production Branch
+3.4 Production Branch
+Flow:
+Production Branch
+↓
+Production CI
+Unit Test Cases
+SonarQube
+Veracode Security Scan
+↓
+Artifact Published
+ZIP
+JAR
+↓
+Production CD
+↓
+Release Approval by PwC Team
+↓
+Production Monitoring by Internal Tester
+4. Application Deployment Paths
+Linux Servers
+/data/
+/dev-env/
+/qa-env/
+/uat-env/
+/prod-env/
+Windows Servers
+C:\JavaServices
+C:\PythonServices
+IIS Deployment Location
+C:\inetpub\
+IIS Applications
+PwCEwbServices
+PwCWeb
+PwCIRNLoginServices
+PwCIRNServices
+Monitoring
+5. Technology Owners
+ 
+Technology	Owner
+Python	Anil
+.NET	Chirag
+Java	Rohit
+ 

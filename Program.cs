@@ -1,19 +1,8 @@
 var builder = WebApplication.CreateBuilder(args);
 
-// Add MVC services
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
-
-// Configure the HTTP request pipeline.
-if (!app.Environment.IsDevelopment())
-{
-    app.UseExceptionHandler("/Home/Error");
-    app.UseHsts();
-}
-
-// Disable HTTPS redirection for HTTP-only deployment
-// app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 

@@ -15,6 +15,7 @@
 /home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.MvcApplicationPartsAssemblyInfo.cache
 /home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.RazorAssemblyInfo.cache
 /home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.RazorAssemblyInfo.cs
+/home/ubuntu/LoginApp/obj/Debug/net10.0/LoginApp.sourcelink.json
 /home/ubuntu/LoginApp/obj/Debug/net10.0/rjimswa.dswa.cache.json
 /home/ubuntu/LoginApp/obj/Debug/net10.0/rjsmrazor.dswa.cache.json
 /home/ubuntu/LoginApp/obj/Debug/net10.0/rjsmcshtml.dswa.cache.json

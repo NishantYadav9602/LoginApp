@@ -10,11 +10,11 @@
         "projectUniqueName": "/home/ubuntu/LoginApp/LoginApp.csproj",
         "projectName": "LoginApp",
         "projectPath": "/home/ubuntu/LoginApp/LoginApp.csproj",
-        "packagesPath": "/root/.nuget/packages/",
+        "packagesPath": "/home/ubuntu/.nuget/packages/",
         "outputPath": "/home/ubuntu/LoginApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/root/.nuget/NuGet/NuGet.Config"
+          "/home/ubuntu/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
