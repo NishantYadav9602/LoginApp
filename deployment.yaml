@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loginapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: loginapp
+  template:
+    metadata:
+      labels:
+        app: loginapp
+    spec:
+      containers:
+      - name: loginapp
+        image: nishantyadav27/loginapp:v1
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8080
